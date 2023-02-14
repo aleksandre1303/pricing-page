@@ -14,8 +14,8 @@ Figma file: https://www.figma.com/file/p01uPjHZtqqRJN0nM8qJ8k/Pricing-Page-(Comm
 
 ### Links
 
-- Solution URL:  https://github.com/aleksandre1303/VR-header-page
-- Live Site URL: https://aleksandre1303.github.io/VR-header-page/
+- Solution URL:  https://github.com/aleksandre1303/pricing-page
+- Live Site URL: https://aleksandre1303.github.io/pricing-page/
 
 
 ## Author
