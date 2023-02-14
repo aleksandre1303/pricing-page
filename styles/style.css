@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
+
+/* Colors */
+@import "colors.css";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  max-width: 1270px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  padding: 32px 0 32px;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-btn {
+  backdrop-filter: blur(8.5px);
+  background-color: var(--pink);
+  padding: 10px 30px;
+  color: var(--white);
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.hero {
+  margin-top: 41px;
+}
+
+.title-content {
+  max-width: 585px;
+}
+
+.plans-title {
+  color: var(--dark-purple);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.hero__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plans-paragraph {
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 27px;
+  font-weight: 500;
+}
+
+.month-year__container {
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  margin-left: 8em;
+}
+
+.type-btn {
+  border-radius: 22px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 13px 24px;
+  text-transform: uppercase;
+}
+
+.pink-btn {
+  background: var(--pink);
+  color: var(--white);
+}
+
+.white-btn {
+  background-color: var(--white);
+  color: var(--dark-purple);
+}
+
+/* Pricing cards */
+
+.main__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(17.5px);
+  border-radius: 26px;
+  max-width: 937px;
+  margin-top: 90px;
+  padding: 15px 45px 15px 65px;
+}
+
+.main__inner {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.pricing-card {
+  max-width: 232px;
+}
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header-title span {
+  margin-top: 0.7em;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  color: var(--dark-purple);
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  color: var(--dark-purple);
+  margin: 18px 0 11px;
+}
+
+.card-paragraph {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.list__container {
+  margin: 20px 0 85px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.card-list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.check-circle {
+  background: rgba(82, 67, 194, 0.15);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.list-text {
+  font-size: 15px;
+}
+
+.card-plan-btn {
+  background-color: var(--dark-purple);
+  border: none;
+  outline: none;
+  border-radius: 24px;
+  color: var(--white);
+  font-size: 15px;
+  padding: 11px 55px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.professional-card .list__container {
+  margin-bottom: 54px;
+}
+
+.company-card {
+  background-color: var(--dark-purple);
+  box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.295755);
+  border-radius: 26px;
+  color: var(--white);
+  padding: 20px 30px;
+  max-width: 292px;
+  transform: translateY(-2em);
+}
+
+.most__popular-container {
+  background-color: var(--light-purple);
+  border-radius: 13.5px;
+  padding: 6px 16px;
+  width: 121px;
+  display: flex;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.most__popular-container p {
+  color: var(--pink);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 10px;
+  letter-spacing: 0.833333px;
+}
+
+.company-card .card-title,
+.company-card .price {
+  color: var(--white);
+}
+
+.company-card .card-plan-btn {
+  opacity: 1;
+  background-color: var(--pink);
+  color: var(--white);
+  width: 100%;
+}
+
+.company-card .list__container {
+  margin-bottom: 23px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__inner {
+    flex-direction: column;
+  }
+
+  .month-year__container {
+    margin: 0;
+  }
+
+  .title-content {
+    text-align: center;
+  }
+
+  .title-content .plans-title {
+    font-size: 36px;
+  }
+
+  .title-content .plans-paragraph {
+    font-size: 1rem;
+    margin: 0 0 2em;
+  }
+
+  .logo-svg {
+    margin-left: 25px;
+  }
+
+  .main__inner {
+    flex-direction: column;
+  }
+
+  .company-card {
+    transform: none;
+  }
+
+  .pricing-card,
+  .company-card {
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
